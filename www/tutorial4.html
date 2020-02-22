@@ -4,8 +4,8 @@
 		<link rel='stylesheet' href='w3.css'>
 		<link rel='stylesheet' href='tutorial2.css'>
 		<script src="vue.js"></script>
-		<script src="jquery.js"></script>
-		<script src="doc2.js"></script>
+		<script src="jquery.min.js"></script>
+		<script src="doc4.js"></script>
 	</head>
 
 	<body>
@@ -21,7 +21,7 @@
 		<div class = 'w3-panel w3-card w3-light-grey'>
 			<h4>Result</h4>
 			<div class='w3-code notranslate'>
-	<button onclick='on_click()'>post with jquery</button><br>
+	<button>post with jquery</button><br>
 			</div>
 		If we click the button, it will show alert message from server.
 		</div>
@@ -35,7 +35,7 @@
 		&lt;script src="jquery.js">&lt;/script>
 		&lt;script>
 			function on_click() {
-				$.post('jquery_post', {name : 'abc', num : 123}, 
+				$.post('result_view', {name : 'abc', num : 123}, 
 					function(data, status) { alert(data); }
 				);
 			}
